@@ -13,7 +13,7 @@
                 var c=document.getElementById("m");
                 var ctx=c.getContext("2d");
 
-            draw_string = 'fx+yf+fx-yf+fx+yf-fx-yf+fx+yf+fx-yf-fx+yf-fx-yf+fx+yf+fx-yf+fx+yf-fx-yf-fx+yf+fx-yf-fx+yf-fx-yf+fx+yf+fx-yf+fx+yf-fx-yf+fx+yf+fx-yf-fx+yf-fx-yf-fx+yf+fx-yf+fx+yf-fx-yf-fx+yf+fx-yf-fx+yf-fx-yf+fx+yf+fx-yf+fx+yf-fx-yf+fx+yf+fx-yf-fx+yf-fx-yf+fx+yf+fx-yf+fx+yf-fx-yf-fx+yf+fx-yf-fx+yf-fx-yf-fx+yf+fx-yf+fx+yf-fx-yf+fx+yf+fx-yf-fx+yf-fx-yf-fx+yf+fx-yf+fx+yf-fx-yf-fx+yf+fx-yf-fx+yf-fx-yf+fx+yf+fx-yf+fx+yf-fx-yf+fx+yf+fx-yf-fx+yf-fx-yf+fx+yf+fx-yf+fx+yf-fx-yf-fx+yf+fx-yf-fx+yf-fx-yf+fx+yf+fx-yf+fx+yf-fx-yf+fx+yf+fx-yf-fx+yf-fx-yf-fx+yf+fx-yf+fx+yf-fx-yf-fx+yf+fx-yf-fx+yf-fx-yf-fx+yf+fx-yf+fx+yf-fx-yf+fx+yf+fx-yf-fx+yf-fx-yf+fx+yf+fx-yf+fx+yf-fx-yf-fx+yf+fx-yf-fx+yf-fx-yf-fx+yf+fx-yf+fx+yf-fx-yf+fx+yf+fx-yf-fx+yf-fx-yf-fx+yf+fx-yf+fx+yf-fx-yf-fx+yf+fx-yf-fx+yf-fx-yf+fx+yf+fx-yf+fx+yf-fx-yf+fx+yf+fx-yf-fx+yf-fx-yf+fx+yf+fx-yf+fx+yf-fx-yf-fx+yf+fx-yf-fx+yf-fx-yf+fx+yf+fx-yf+fx+yf-fx-yf+fx+yf+fx-yf-fx+yf-fx-yf-fx+yf+fx-yf+fx+yf-fx-yf-fx+yf+fx-yf-fx+yf-fx-yf+fx+yf+fx-yf+fx+yf-fx-yf+fx+yf+fx-yf-fx+yf-fx-yf+fx+yf+fx-yf+fx+yf-fx-yf-fx+yf+fx-yf-fx+yf-fx-yf-fx+yf+fx-yf+fx+yf-fx-yf+fx+yf+fx-yf-fx+yf-fx-yf-fx+yf+fx-yf+fx+yf-fx-yf-fx+yf+fx-yf-fx+yf-fx-yf-fx+yf+fx-yf+fx+yf-fx-yf+fx+yf+fx-yf-fx+yf-fx-yf+fx+yf+fx-yf+fx+yf-fx-yf-fx+yf+fx-yf-fx+yf-fx-yf+fx+yf+fx-yf+fx+yf-fx-yf+fx+yf+fx-yf-fx+yf-fx-yf-fx+yf+fx-yf+fx+yf-fx-yf-fx+yf+fx-yf-fx+yf-fx-yf-fx+yf+fx-yf+fx+yf-fx-yf+fx+yf+fx-yf-fx+yf-fx-yf+fx+yf+fx-yf+fx+yf-fx-yf-fx+yf+fx-yf-fx+yf-fx-yf-fx+yf+fx-yf+fx+yf-fx-yf+fx+yf+fx-yf-fx+yf-fx-yf-fx+yf+fx-yf+fx+yf-fx-yf-fx+yf+fx-yf-fx+yf-fx-yf'
+                draw_string = 'fx+yf+fx-yf+fx+yf-fx-yf+fx+yf+fx-yf-fx+yf-fx-yf+fx+yf+fx-yf+fx+yf-fx-yf-fx+yf+fx-yf-fx+yf-fx-yf+fx+yf+fx-yf+fx+yf-fx-yf+fx+yf+fx-yf-fx+yf-fx-yf-fx+yf+fx-yf+fx+yf-fx-yf-fx+yf+fx-yf-fx+yf-fx-yf+fx+yf+fx-yf+fx+yf-fx-yf+fx+yf+fx-yf-fx+yf-fx-yf+fx+yf+fx-yf+fx+yf-fx-yf-fx+yf+fx-yf-fx+yf-fx-yf-fx+yf+fx-yf+fx+yf-fx-yf+fx+yf+fx-yf-fx+yf-fx-yf-fx+yf+fx-yf+fx+yf-fx-yf-fx+yf+fx-yf-fx+yf-fx-yf+fx+yf+fx-yf+fx+yf-fx-yf+fx+yf+fx-yf-fx+yf-fx-yf+fx+yf+fx-yf+fx+yf-fx-yf-fx+yf+fx-yf-fx+yf-fx-yf+fx+yf+fx-yf+fx+yf-fx-yf+fx+yf+fx-yf-fx+yf-fx-yf-fx+yf+fx-yf+fx+yf-fx-yf-fx+yf+fx-yf-fx+yf-fx-yf-fx+yf+fx-yf+fx+yf-fx-yf+fx+yf+fx-yf-fx+yf-fx-yf+fx+yf+fx-yf+fx+yf-fx-yf-fx+yf+fx-yf-fx+yf-fx-yf-fx+yf+fx-yf+fx+yf-fx-yf+fx+yf+fx-yf-fx+yf-fx-yf-fx+yf+fx-yf+fx+yf-fx-yf-fx+yf+fx-yf-fx+yf-fx-yf+fx+yf+fx-yf+fx+yf-fx-yf+fx+yf+fx-yf-fx+yf-fx-yf+fx+yf+fx-yf+fx+yf-fx-yf-fx+yf+fx-yf-fx+yf-fx-yf+fx+yf+fx-yf+fx+yf-fx-yf+fx+yf+fx-yf-fx+yf-fx-yf-fx+yf+fx-yf+fx+yf-fx-yf-fx+yf+fx-yf-fx+yf-fx-yf+fx+yf+fx-yf+fx+yf-fx-yf+fx+yf+fx-yf-fx+yf-fx-yf+fx+yf+fx-yf+fx+yf-fx-yf-fx+yf+fx-yf-fx+yf-fx-yf-fx+yf+fx-yf+fx+yf-fx-yf+fx+yf+fx-yf-fx+yf-fx-yf-fx+yf+fx-yf+fx+yf-fx-yf-fx+yf+fx-yf-fx+yf-fx-yf-fx+yf+fx-yf+fx+yf-fx-yf+fx+yf+fx-yf-fx+yf-fx-yf+fx+yf+fx-yf+fx+yf-fx-yf-fx+yf+fx-yf-fx+yf-fx-yf+fx+yf+fx-yf+fx+yf-fx-yf+fx+yf+fx-yf-fx+yf-fx-yf-fx+yf+fx-yf+fx+yf-fx-yf-fx+yf+fx-yf-fx+yf-fx-yf-fx+yf+fx-yf+fx+yf-fx-yf+fx+yf+fx-yf-fx+yf-fx-yf+fx+yf+fx-yf+fx+yf-fx-yf-fx+yf+fx-yf-fx+yf-fx-yf-fx+yf+fx-yf+fx+yf-fx-yf+fx+yf+fx-yf-fx+yf-fx-yf-fx+yf+fx-yf+fx+yf-fx-yf-fx+yf+fx-yf-fx+yf-fx-yf'
 
                 ctx.fillStyle="#000000";
                 x = 200;
@@ -30,10 +30,10 @@
                         ctx.lineTo(x, y);
                         ctx.stroke();
                     }else if(draw_string.charAt(i) == '+'){
-                    console.log(draw_string.charAt(i));
+                        console.log(draw_string.charAt(i));
                         bearing = right(bearing);
                     }else if(draw_string.charAt(i) == '-'){
-                    console.log(draw_string.charAt(i));
+                        console.log(draw_string.charAt(i));
                         bearing = left(bearing);
                     }
                 }
