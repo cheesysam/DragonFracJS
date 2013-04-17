@@ -1,13 +1,8 @@
 <html>
     <head>
         <script type = "text/javascript">
-            window.onload = doload;
 
-            //function dragon_string(string_array, n){
-            //   for(int i = 0; i < string_array.length; i++){
-            //        
-            //    }
-            //}
+            window.onload = doload;
 
             function doload(){
                 var c=document.getElementById("m");
@@ -20,8 +15,21 @@
                 y = 200;
                 bearing = 1;
                 ctx.moveTo(x, y);
-                
-                for(var i = 0; i < draw_string.length; i++){
+                var counter = 0;
+                ticker(counter, ctx);
+
+                function ticker(){
+                    console.log("ticker" + counter);
+                    draw_step(ctx, counter);
+                    counter+=1;
+                    setInterval(ticker, 2000);
+                }
+
+            }
+
+            function draw_step(ctx, i){
+                console.log("draw");
+                if(i <= draw_string.length){
                     if(draw_string.charAt(i) == 'f'){
                         console.log(draw_string.charAt(i));
                         coords = drawto(ctx, x, y, bearing, 10);
@@ -35,35 +43,6 @@
                         bearing = left(bearing);
                     }
                 }
-
-                /*for(var j = 0; j < 30; j++){
-                    for(var i = 0; i < 2; i++){
-                        coords = drawto(x, y, bearing, 40);
-                        x = coords[0];
-                        y = coords[1];
-
-                        ctx.lineTo(x, y);
-                        ctx.stroke();
-
-                        bearing = right(bearing);
-                    }
-
-                    for(var k = 0; k < 2; k++){
-                        coords = drawto(x, y, bearing, 20);
-                        x = coords[0];
-                        y = coords[1];
-
-                        ctx.lineTo(x, y);
-                        ctx.stroke();
-
-                        bearing = right(bearing);
-                    }
-                }*/
-                //while true{
-                //    coords = drawto(x, y, bearing, 10)
-                //    ctx.moveTo(x,y);
-                //    ctx.stroke();
-                //}
             }
 
             function drawto(context, x, y, bearing, distance){
